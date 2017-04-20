@@ -1,0 +1,559 @@
+body
+        {
+            background-image: url(images/background.jpg);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-color: #657077;
+            margin: 40px;
+        }
+        
+        #tabbed_box_1
+        {
+            margin: 0px auto 0px auto;
+            width: 700px;
+        }
+        .tabbed_box h4
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 23px;
+            color: #ffffff;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+        .tabbed_box h4 small
+        {
+            color: #e3e9ec;
+            font-weight: normal;
+            font-size: 9px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            position: relative;
+            top: -4px;
+            left: 6px;
+            letter-spacing: 0px;
+        }
+        .tabbed_area
+        {
+            border: 1px solid #494e52;
+            background-color: #7F7FFF;
+            padding: 8px;
+        }
+        
+        ul.tabs
+        {
+            margin: 0px;
+            padding: 0px;
+            margin-top: 5px;
+            margin-bottom: 6px;
+        }
+        ul.tabs li
+        {
+            list-style: none;
+            display: inline;
+        }
+        ul.tabs li a
+        {
+            background-color: #464c54;
+            color: #ffebb5;
+            padding: 8px 14px 8px 14px;
+            text-decoration: none;
+            font-size: 9px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 1px solid #464c54;
+            //background-image: url(images/tab_off.jpg);
+            background-repeat: repeat-x;
+            background-position: bottom;
+        }
+        ul.tabs li a:hover
+        {
+            background-color: #2f343a;
+            border-color: #2f343a;
+        }
+        ul.tabs li a.active
+        {
+            background-color: #ffffff;
+            color: #282e32;
+            border: 1px solid #464c54;
+            border-bottom: 1px solid #ffffff;
+            //background-image: url(images/tab_on.jpg);
+            background-repeat: repeat-x;
+            background-position: top;
+        }
+        .content
+        {
+            background-color: #ffffff;
+            padding: 10px;
+            border: 1px solid #464c54;
+            font-family: Arial, Helvetica, sans-serif;
+            //background-image: url(images/content_bottom.jpg);
+            background-repeat: repeat-x;
+            background-position: bottom;
+        }
+        #content_2, #content_3, #content_4
+        {
+            display: none;
+        }
+        
+        .content ul
+        {
+            margin: 0px;
+            padding: 0px 20px 0px 20px;
+        }
+        .content ul li
+        {
+            list-style: none;
+            border-bottom: 1px solid #d6dde0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 13px;
+        }
+        .content ul li:last-child
+        {
+            border-bottom: none;
+        }
+        .content ul li a
+        {
+            text-decoration: none;
+            color: #3e4346;
+        }
+        .content ul li a small
+        {
+            color: #8b959c;
+            font-size: 9px;
+            text-transform: uppercase;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            position: relative;
+            left: 4px;
+            top: 0px;
+        }
+        .content ul li a:hover
+        {
+            color: #a59c83;
+        }
+        .content ul li a:hover small
+        {
+            color: #baae8e;
+        }
+        .theme-default .nivoSlider
+        {
+            position: relative;
+            background: #fff url(loading.gif) no-repeat 50% 50%;
+            margin-bottom: 10px;
+            -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+            -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+            box-shadow: 0px 1px 5px 0px #4a4a4a;
+        }
+        .theme-default .nivoSlider img
+        {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+        .theme-default .nivoSlider a
+        {
+            border: 0;
+            display: block;
+        }
+        
+        .theme-default .nivo-controlNav
+        {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .theme-default .nivo-controlNav a
+        {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background: url(bullets.png) no-repeat;
+            text-indent: -9999px;
+            border: 0;
+            margin: 0 2px;
+        }
+        .theme-default .nivo-controlNav a.active
+        {
+            background-position: 0 -22px;
+        }
+        
+        .theme-default .nivo-directionNav a
+        {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: url(arrows.png) no-repeat;
+            text-indent: -9999px;
+            border: 0;
+            opacity: 0;
+            -webkit-transition: all 200ms ease-in-out;
+            -moz-transition: all 200ms ease-in-out;
+            -o-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
+        }
+        .theme-default:hover .nivo-directionNav a
+        {
+            opacity: 1;
+        }
+        .theme-default a.nivo-nextNav
+        {
+            background-position: -30px 0;
+            right: 15px;
+        }
+        .theme-default a.nivo-prevNav
+        {
+            left: 15px;
+        }
+        
+        .theme-default .nivo-caption
+        {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .theme-default .nivo-caption a
+        {
+            color: #fff;
+            border-bottom: 1px dotted #fff;
+        }
+        .theme-default .nivo-caption a:hover
+        {
+            color: #fff;
+        }
+        
+        .theme-default .nivo-controlNav.nivo-thumbs-enabled
+        {
+            width: 100%;
+        }
+        .theme-default .nivo-controlNav.nivo-thumbs-enabled a
+        {
+            width: auto;
+            height: auto;
+            background: none;
+            margin-bottom: 5px;
+        }
+        .theme-default .nivo-controlNav.nivo-thumbs-enabled img
+        {
+            display: block;
+            width: 53px;
+            height: auto;
+        }
+        .theme-light.slider-wrapper
+        {
+            background: #fff;
+            padding: 10px;
+        }
+        .theme-light .nivoSlider
+        {
+            position: relative;
+            background: #fff url(loading.gif) no-repeat 50% 50%;
+            margin-bottom: 10px;
+            overflow: visible;
+        }
+        .theme-light .nivoSlider img
+        {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+        .theme-light .nivoSlider a
+        {
+            border: 0;
+            display: block;
+        }
+        
+        .theme-light .nivo-controlNav
+        {
+            text-align: left;
+            padding: 0;
+            position: relative;
+            z-index: 10;
+        }
+        .theme-light .nivo-controlNav a
+        {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: url(bullets.png) no-repeat;
+            text-indent: -9999px;
+            border: 0;
+            margin: 0 2px;
+        }
+        .theme-light .nivo-controlNav a.active
+        {
+            background-position: 0 100%;
+        }
+        
+        .theme-light .nivo-directionNav a
+        {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: url(arrows.png) no-repeat;
+            text-indent: -9999px;
+            border: 0;
+            top: auto;
+            bottom: -36px;
+            z-index: 11;
+        }
+        .theme-light .nivo-directionNav a:hover
+        {
+            background-color: #eee;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+        }
+        .theme-light a.nivo-nextNav
+        {
+            background-position: 160% 50%;
+            right: 0px;
+        }
+        .theme-light a.nivo-prevNav
+        {
+            background-position: -60% 50%;
+            left: auto;
+            right: 35px;
+        }
+        
+        .theme-light .nivo-caption
+        {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .theme-light .nivo-caption a
+        {
+            color: #fff;
+            border-bottom: 1px dotted #fff;
+        }
+        .theme-light .nivo-caption a:hover
+        {
+            color: #fff;
+        }
+        
+        .theme-light .nivo-controlNav.nivo-thumbs-enabled
+        {
+            width: 80%;
+        }
+        .theme-light .nivo-controlNav.nivo-thumbs-enabled a
+        {
+            width: auto;
+            height: auto;
+            background: none;
+            margin-bottom: 5px;
+        }
+        .theme-light .nivo-controlNav.nivo-thumbs-enabled img
+        {
+            display: block;
+            width: 120px;
+            height: auto;
+        }
+        .nivoSlider
+        {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        .nivoSlider img
+        {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            max-width: none;
+        }
+        .nivo-main-image
+        {
+            display: block !important;
+            position: relative !important;
+            width: 100% !important;
+        }
+        
+        /* If an image is wrapped in a link */
+        .nivoSlider a.nivo-imageLink
+        {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            z-index: 6;
+            display: none;
+            background: white;
+            filter: alpha(opacity=0);
+            opacity: 0;
+        }
+        /* The slices and boxes in the Slider */
+        .nivo-slice
+        {
+            display: block;
+            position: absolute;
+            z-index: 5;
+            height: 100%;
+            top: 0;
+        }
+        .nivo-box
+        {
+            display: block;
+            position: absolute;
+            z-index: 5;
+            overflow: hidden;
+        }
+        .nivo-box img
+        {
+            display: block;
+        }
+        
+        /* Caption styles */
+        .nivo-caption
+        {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            background: #000;
+            color: #fff;
+            width: 100%;
+            z-index: 8;
+            padding: 5px 10px;
+            opacity: 0.8;
+            overflow: hidden;
+            display: none;
+            -moz-opacity: 0.8;
+            filter: alpha(opacity=8);
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box; /* Firefox, other Gecko */
+            box-sizing: border-box; /* Opera/IE 8+ */
+        }
+        .nivo-caption p
+        {
+            padding: 5px;
+            margin: 0;
+        }
+        .nivo-caption a
+        {
+            display: inline !important;
+        }
+        .nivo-html-caption
+        {
+            display: none;
+        }
+        /* Direction nav styles (e.g. Next & Prev) */
+        .nivo-directionNav a
+        {
+            position: absolute;
+            top: 45%;
+            z-index: 9;
+            cursor: pointer;
+        }
+        .nivo-prevNav
+        {
+            left: 0px;
+        }
+        .nivo-nextNav
+        {
+            right: 0px;
+        }
+        /* Control nav styles (e.g. 1,2,3...) */
+        .nivo-controlNav
+        {
+            text-align: center;
+            padding: 15px 0;
+        }
+        .nivo-controlNav a
+        {
+            cursor: pointer;
+        }
+        .nivo-controlNav a.active
+        {
+            font-weight: bold;
+        }
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-size: 100%;
+            font-family: inherit;
+            vertical-align: baseline;
+        }
+        body
+        {
+            line-height: 1;
+            color: black;
+            background: white;
+        }
+        table
+        {
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        caption, th, td
+        {
+            text-align: left;
+            font-weight: normal;
+        }
+        blockquote:before, blockquote:after, q:before, q:after
+        {
+            content: "";
+        }
+        blockquote, q
+        {
+            quotes: "" "";
+        }
+        /* HTML5 tags */
+        header, section, footer, aside, nav, article, figure
+        {
+            display: block;
+        }
+        
+        /*===================*/
+        /*=== Main Styles ===*/
+        /*===================*/
+        body
+        {
+            font: 14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+            color: #333;
+            background: #eee;
+        }
+        
+        a, a:visited
+        {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover, a:active
+        {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        #dev7link
+        {
+            position: absolute;
+            top: 0;
+            left: 50px;
+            background: url(images/dev7logo.png) no-repeat;
+            width: 60px;
+            height: 67px;
+            border: 0;
+            display: block;
+            text-indent: -9999px;
+        }
+        
+        .slider-wrapper
+        {
+            width: 95%;
+            margin: 10px auto;
+        }
+        
+        /*====================*/
+        /*=== Other Styles ===*/
+        /*====================*/
+        .clear
+        {
+            clear: both;
+        }
